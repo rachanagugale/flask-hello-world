@@ -1,3 +1,5 @@
 Flask
 Gunicorn
 opencv-python
+fastai==1.0.52
+numpy==1.16.3
