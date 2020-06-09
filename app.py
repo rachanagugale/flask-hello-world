@@ -15,7 +15,8 @@ def upload_video():
             #video.save(os.path.join(app.config['VIDEO_UPLOADS']), video.filename)
             #video.save("C:\\Users\\Rachana\\Desktop\\ProjectFrontend\\FlaskApp\\uploads\\" + video.filename)
             print("Video saved")
-            print(os.getcwd())
+            path = os.getcwd()
+            print(os.listdir(path))
 
             return redirect(request.url)
     return render_template("upload_video.html")
