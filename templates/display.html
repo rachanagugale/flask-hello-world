@@ -11,6 +11,16 @@
     <video controls width="250">
         <source src="{{full_filename}}" type="video/mp4">
     </video>
+
+    {% block content %}
+        {% for source in sources %}
+            <img src="{{source}}" width="200px" height="200px"><br>
+        {% endfor %}
+    {% endblock content %}
+
 </body>
+
+
+
 
 
